@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding :0 ;
+    box-sizing: border-box;
+    font-family: "Times New Roman";
+}
+.quote-1{
+    background-color: #FF5252;
+}
+.quote-1 .main-quote p {
+    color: #FF5252;
+}
+.quote-1 .main-quote a{
+    background-color: #FF5252;
+}
+.quote-1 .main-quote-message {
+    background: #fad4d4;
+    box-shadow: 5px 5px 22px 2px #dcafaf;
+}
+.quote-2{
+    background-color: #303F9F;
+}
+.quote-2 .main-quote p {
+    color: #303F9F;
+}
+.quote-2 .main-quote a{
+    background-color: #303F9F;
+}
+.quote-2 .main-quote-message {
+    background: #d0d7ff;
+    box-shadow: 5px 5px 22px 2px #7e88ca;
+}
+.quote-3{
+    background-color: #FFA000;
+}
+.quote-3 .main-quote p {
+    color: #FFA000;
+}
+.quote-3 .main-quote a{
+    background-color: #FFA000;
+}
+.quote-3 .main-quote-message {
+    background: #fdedd2;
+    box-shadow: 5px 5px 22px 2px #7b694c;
+}
+.quote-4{
+    background-color: #5D4037;
+}
+.quote-4 .main-quote p {
+    color: #5D4037;
+}
+.quote-4 .main-quote a{
+    background-color: #5D4037;
+}
+.quote-4 .main-quote-message {
+    background: #fbe1d9;
+    box-shadow: 5px 5px 22px 2px #c09283;
+}
+.quote-5{
+    background-color: #455A64;
+}
+.quote-5 .main-quote p {
+    color: #455A64;
+}
+.quote-5 .main-quote a{
+    background-color: #455A64;
+}
+.quote-5 .main-quote-message {
+    background: #d2ecf9;
+    box-shadow: 5px 5px 22px 2px #7f9caa;
+}
+.quote-6{
+    background-color: #7B1FA2;
+}
+.quote-6 .main-quote p {
+    color: #7B1FA2;
+}
+.quote-6 .main-quote a{
+    background-color: #7B1FA2;
+}
+.quote-6 .main-quote-message {
+    background: #eec5ff;
+    box-shadow: 5px 5px 22px 2px #b58ec5;
+}
+.quote-7{
+    background-color: #388E3C;
+}
+.quote-7 .main-quote p {
+    color: #388E3C;
+}
+.quote-7 .main-quote a{
+    background-color: #388E3C;
+}
+.quote-7 .main-quote-message {
+    background: #dfffe1;
+    box-shadow: 5px 5px 22px 2px #95cb97;
+}
+.quote-8{
+    background-color: #0097A7;
+}
+.quote-8 .main-quote p {
+    color: #0097A7;
+}
+.quote-8 .main-quote a{
+    background-color: #0097A7;
+}
+.quote-8 .main-quote-message {
+    background: #d6f8fc;
+    box-shadow: 5px 5px 22px 2px #8fcbd2;
+}
+.quote-9{
+    background-color: #F57C00;
+}
+.quote-9 .main-quote p {
+    color: #F57C00;
+}
+.quote-9 .main-quote a{
+    background-color: #F57C00;
+}
+.quote-9 .main-quote-message {
+    background: #ecd1b8;
+    box-shadow: 5px 5px 22px 2px #b59a7d;
+}
+.quote-10{
+    background-color: #AFB42B;
+}
+.quote-10 .main-quote p {
+    color: #AFB42B;
+}
+.quote-10 .main-quote a{
+    background-color: #AFB42B;
+}
+.quote-10 .main-quote-message {
+    background: #feffdc;
+    box-shadow: 5px 5px 22px 2px #898b5b;
+}
+
+.main-quote {
+    color: #ffffff;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-quote-show{
+    width: 100%;
+    height: 90%;        
+}
+.main-quote-show h2{
+    text-align: center;        
+}
+.main-quote-message {
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    height: 65%;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+.main-quote-message p{
+    padding: 20px;
+    margin: 0px;
+    font-size: 18px;
+    
+}
+.main-quote-message p.quote-by-p {
+    padding: 0px;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.main-quote a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.quote-a{
+    position: absolute;
+    margin: auto;
+    bottom: 18px;
+    right: 0;
+    left: 0;
+}

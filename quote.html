@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Quote  JS</title>
+        <link rel="stylesheet" href="./quote.css">
+        <script src="https://kit.fontawesome.com/2710be599b.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <body class="" id="body">
+        <div class="main-quote">
+            <div class ="main-quote-show">
+                <h2 id="quote-h"></h2>
+                <div class="main-quote-message">
+                    <p id="quote"> </p>
+                    <p class="quote-by-p" id="quote-by"></p>
+                    <div class="quote-a"><a href="javascript:;" id="new-quote"> New Quote</a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+    <script>
+        var quoteObj=[
+            {
+                'class':'quote-1',
+                'quote':'What sets you apart can sometimes feel like a burden and it’s not. And a lot of the time, it’s what makes you great.',
+                'quote_by':'Emma Stone'
+            },
+            {
+                'class':'quote-2',
+                'quote':'Normal is not something to aspire to, it’s something to get away from.',
+                'quote_by':'Jodie Foster'
+            },
+            {
+                'class':'quote-3',
+                'quote':'When you  embrace your difference, your DNA, your look or heritage or religion or your unusual name, that’s when you start to shine.',
+                'quote_by':'Bethenny Frankel'
+            },
+            {
+                'class':'quote-4',
+                'quote':'Cherish forever what makes you unique, ‘cuz you’re really a yawn if it goes.',
+                'quote_by':'Bette Midler'
+            },
+            {
+                'class':'quote-5',
+                'quote':'In order to be irreplaceable one must always be different.',
+                'quote_by':'Coco Chanel`'
+            },
+            {
+                'class':'quote-6',
+                'quote':'The most incredible beauty and the most satisfying way of life come from affirming your own uniqueness.',
+                'quote_by':'Jane Fonda'
+            },
+            {
+                'class':'quote-7',
+                'quote':'People have a problem with me being different, but that propels me forward in life.',
+                'quote_by':'Mary-Louise Parker'
+            },
+            {
+                'class':'quote-8',
+                'quote':'Fitting in allows you to blend in with everyone else, but being different allows you to be yourself, to be unique and to  be more creative.',
+                'quote_by':'Sonya Parker'
+            },
+            {
+                'class':'quote-9',
+                'quote':'Always be a first-rate version of yourself, instead of a second-rate version of somebody else.',
+                'quote_by':'Judy Garland'
+            },
+            {
+                'class':'quote-10',
+                'quote':'Only recently have I realized that being different is not something you want to hide or squelch or suppress.',
+                'quote_by':'Amy Gerstler '
+            },
+        ];
+        $('#new-quote').click(function(){
+            runNewQuote();
+        })
+        function runNewQuote(){
+            const rndInt =Math.floor(Math.random() * 10) + 0
+            console.log(rndInt)
+            let quoteValue =quoteObj[rndInt];
+            let date = new Date();
+            let  timeOfDay= 'Morning';
+            console.log(date);
+            let hrs = date.getHours();
+            if (hrs >= 14 && hrs <= 17) {
+                timeOfDay = "Afternoon";
+            }
+            if (hrs >= 18 ) {
+                timeOfDay = "Evening";
+            }
+
+            
+            $('#body').removeClass();
+            $('#body').addClass(quoteValue.class);
+            $('#quote').html(`<i class="fa-solid fa-quote-left"></i> ${quoteValue.quote} <i class="fa-solid fa-quote-right"></i>`);
+            $('#quote-by').html(`- By ${quoteValue.quote_by}`);
+            $('#quote-h').html(`Let's start our ${timeOfDay} with a new quote`);
+        }
+        runNewQuote();
+    </script>
+
+</html>
